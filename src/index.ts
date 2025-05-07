@@ -29,4 +29,6 @@ export interface MediaMetadataOptions {
   getThumb?: boolean;
 }
 
-export default TurboModuleRegistry.getEnforcing<Spec>('MediaMetadata');
+const MediaMetadata = TurboModuleRegistry.getEnforcing<Spec>('MediaMetadata');
+
+export default MediaMetadata;
